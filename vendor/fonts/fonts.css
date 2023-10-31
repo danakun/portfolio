@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "TypyType";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./TypyType.woff2") format("woff2"),
+    url("./TypyType.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TypyReg";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./TypyReg.woff2") format("woff2"),
+    url("./TypyReg.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./OpenSans.woff2") format("woff2"),
+    url("./TypyType.woff") format("woff");
+}

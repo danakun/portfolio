@@ -1,0 +1,131 @@
+.intro {
+  margin: 40px auto 400px;
+  border-top: 1px solid var(--transparent-black);
+  font-family: "OpenSans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.intro__image {
+  width: 260px;
+  height: 260px;
+  object-fit: contain;
+  align-self: end;
+}
+
+.intro__stack {
+  max-width: 80%;
+  padding-top: 20px;
+}
+
+.intro__title {
+  margin: 0;
+}
+
+.intro__topics-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.intro__stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-bottom: 32px;
+}
+
+.intro__topics-title {
+  margin: 0 0 10px 0;
+  border-top: 1px solid var(--transparent-black);
+  padding-top: 10px;
+}
+
+.intro__stack-title {
+  margin: 10px 0;
+  padding-top: 10px;
+}
+
+.intro__stack-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 1px solid var(--transparent-black);
+}
+
+.intro__topics-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 1px solid var(--transparent-black);
+}
+
+.intro__about {
+  grid-column: 2;
+  max-width: 78%;
+}
+
+.intro__text {
+  padding: 0 0 10px 0;
+}
+
+@media screen and (max-width: 1070px) {
+  .intro {
+    margin-bottom: 180px;
+  }
+  .intro__about {
+    font-size: 14px;
+    min-width: 480px;
+  }
+
+  .intro__stack {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .intro {
+    margin-bottom: 180px;
+  }
+
+  .intro-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    align-self: end;
+    grid-row: 1;
+  }
+
+  .intro__stack {
+    max-width: 100%;
+  }
+
+  .intro__stack-list {
+    padding-bottom: 0;
+  }
+
+  .intro__about {
+    min-width: 100%;
+    max-width: 100%;
+    border-top: none;
+  }
+  .intro__topics-title {
+    margin-top: 0;
+  }
+}

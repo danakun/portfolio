@@ -1,0 +1,153 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+@import url(./blocks/size-m/size-m.css);
+@import url(./blocks/project/project.css);
+@import url(./blocks/project-grid/project-grid.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/modal/modal.css);
+@import url(./blocks/get-in-touch/get-in-touch.css);
+@import url(./blocks/intro/intro.css);
+@import url(./blur.css);
+
+:root {
+  --black: #000;
+  --transparent-black: rgba(128, 128, 128, 0.3);
+  --semi-black: rgba(0, 0, 0, 0.7);
+  --white: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #fff;
+    --transparent-black: rgba(128, 128, 128, 0.3);
+    --semi-black: rgba(255, 255, 255, 0.7);
+    --white: #000;
+  }
+}
+
+/* Change the SVG fill color for dark mode */
+@media (prefers-color-scheme: dark) {
+  svg path {
+    fill: var(--black); /* Use the white color in dark mode */
+  }
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+
+.hero__title {
+  padding-bottom: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.big-header {
+  font-family: "TypyReg", sans-serif;
+  font-size: 182px;
+  /* font-size: 11em; */
+  font-weight: normal;
+  text-align: left;
+  line-height: 90%; /* 163.8px */
+  letter-spacing: -5.46px;
+  text-transform: uppercase;
+  margin: 0;
+  max-width: 80vw;
+}
+
+.regular-header {
+  font-family: "TypyType", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 16.8px */
+  text-transform: uppercase;
+  margin: 0 auto 10px;
+}
+
+.text {
+  font-family: "OpenSans", sans-serif;
+  color: var(--semi-black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  margin: 0;
+}
+
+.link {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--black);
+  border-bottom: 1px solid var(--black);
+}
+
+@media screen and (max-width: 1070px) {
+  .big-header {
+    font-size: 142px;
+    line-height: 90%; /* 90px */
+  }
+  .text {
+    font-size: 14px;
+    line-height: 120%; /* 16.8px */
+  }
+  .link {
+    font-size: 16px;
+    line-height: 120%; /* 16.8px */
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .big-header {
+    font-size: 100px;
+    line-height: 90%; /* 90px */
+  }
+
+  .regular-header {
+    font-size: 12px;
+    line-height: 120%; /* 14.4px */
+  }
+  .link {
+    font-size: 14px;
+    line-height: 120%; /* 16.8px */
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .text {
+    font-size: 12px;
+    line-height: 120%; /* 14.4px */
+  }
+  .regular-header {
+    font-size: 10px;
+    line-height: 120%; /* 12px */
+  }
+  .hero {
+    height: 600px;
+  }
+  .big-header {
+    font-size: 64px;
+    line-height: 90%; /* 57.6px */
+    width: 100%;
+  }
+}

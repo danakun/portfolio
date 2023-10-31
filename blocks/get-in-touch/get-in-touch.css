@@ -1,0 +1,42 @@
+.get-in-touch {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 400px;
+  padding-bottom: 40px;
+}
+
+.get-in-touch__text {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  color: var(--semi-black);
+  max-width: 20%;
+  margin: 0;
+}
+
+.get-in-touch__title {
+  max-width: 60%;
+  margin: 0;
+}
+
+@media screen and (max-width: 840px) {
+  .get-in-touch {
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    margin-top: 180px;
+  }
+
+  .get-in-touch__text {
+    max-width: 480px;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+
+  .get-in-touch__title {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  padding: 20px 0 20px;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid var(--transparent-black);
+  text-transform: uppercase;
+  background-color: var(--white);
+}
+
+.footer__copyright {
+  font-family: "TypyReg", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 19.2px */
+  color: var(--semi-black);
+  margin: 0;
+}
+
+@media screen and (max-width: 1070px) {
+  .footer__copyright {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .footer {
+    padding: 20px 0 20px;
+  }
+  .footer__copyright {
+    font-size: 11px;
+  }
+}

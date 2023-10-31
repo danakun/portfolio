@@ -1,0 +1,10 @@
+/* Add the blur effect to the sections initially */
+.blur-effect {
+  filter: blur(5px);
+  transition: filter 0.5s;
+}
+
+/* Remove the blur effect on hover for example */
+.blur-effect:hover {
+  filter: blur(0);
+}
