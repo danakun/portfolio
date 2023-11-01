@@ -14,6 +14,7 @@
   --transparent-black: rgba(128, 128, 128, 0.3);
   --semi-black: rgba(0, 0, 0, 0.7);
   --white: #fff;
+  --trail: #64ff00;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +23,7 @@
     --transparent-black: rgba(128, 128, 128, 0.3);
     --semi-black: rgba(255, 255, 255, 0.7);
     --white: #000;
+    --trail: #fc49ab;
   }
 }
 
@@ -35,6 +37,10 @@
 body {
   background-color: var(--white);
   color: var(--black);
+}
+
+a {
+  cursor: pointer;
 }
 
 .hero {
@@ -92,6 +98,9 @@ ul {
   font-weight: 400;
   line-height: 120%; /* 19.2px */
   text-decoration: none;
+
+  cursor: pointer;
+  z-index: 2000;
 }
 
 .link:hover {
@@ -129,6 +138,14 @@ ul {
     font-size: 14px;
     line-height: 120%; /* 16.8px */
     padding: 0;
+
+    backdrop-filter: blur(9px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blur-effect {
+    filter: none !important;
   }
 }
 
@@ -149,4 +166,22 @@ ul {
     line-height: 90%; /* 57.6px */
     width: 100%;
   }
+}
+
+svg.trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  z-index: 3;
+}
+
+svg.trail path {
+  fill: none;
+  stroke: var(--trail);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /* animation: dash 5s linear forwards; */
 }

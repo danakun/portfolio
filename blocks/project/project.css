@@ -11,6 +11,9 @@
   padding-top: 20px;
   border-top: 1px solid var(--transparent-black);
   margin-bottom: 280px;
+
+  z-index: 100;
+  position: relative;
 }
 
 /* .project:hover .project__image {

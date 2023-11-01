@@ -9,6 +9,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
+  /* backdrop-filter: blur(9px); */
 }
 
 .header__logo {
@@ -38,6 +39,9 @@
   align-items: left;
   gap: 5px;
   margin: 0;
+  height: 100%;
+
+  backdrop-filter: blur(9px);
 }
 
 .header__links-link {

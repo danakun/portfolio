@@ -4,6 +4,9 @@
   gap: 10px;
   margin-top: 400px;
   padding-bottom: 40px;
+
+  z-index: 100;
+  position: relative;
 }
 
 .get-in-touch__text {
