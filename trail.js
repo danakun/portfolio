@@ -43,7 +43,7 @@ const anim = () => {
     }
   });
 
-  path.setAttribute("d", `M ${points.map((p) => `${p.x} ${p.y}`).join(` L `)}`);
+  path.setAttribute("d", `M ${points.map((p) => `${p.x} ${p.y}`).join(" L ")}`);
 
   requestAnimationFrame(anim);
 };
