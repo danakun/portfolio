@@ -70,6 +70,7 @@
 .project__number {
   font-family: "TypyReg", "Gill Sans MT", "Trebuchet MS", sans-serif;
   display: inline-block;
+  align-self: start;
 }
 
 @media screen and (max-width: 1070px) {
