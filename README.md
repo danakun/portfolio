@@ -7,7 +7,8 @@ Welcome to my minimalist web developer portfolio! This project serves as a space
 ## Features
 
 - **Dark Mode**: The portfolio offers a dark mode for a sleek and comfortable viewing experience, especially during late hours.
-- **Blur Effect**: I've implemented a blur effect to add a touch of creativity and style to the design.
+- **Mouse Trail**: Added a mouse trail effect to add a touch of creativity and style to the design.
+- **Blur Effect**: I've implemented a blur on the link list background to improve user experience.
 - **Time at my Location**: I've added ty so the user can see what time is in my region when emails me.
 - **Constant Work in Progress**: This portfolio is always evolving, and I'm continuously working on improvements.
 
