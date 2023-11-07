@@ -146,15 +146,18 @@ ul {
   .blur-effect {
     filter: none !important;
   }
+  .logotype {
+    width: 64px;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .text {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 120%; /* 14.4px */
   }
   .regular-header {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 120%; /* 12px */
   }
   .hero {
