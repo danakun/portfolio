@@ -2,7 +2,7 @@ const additionalProjects = [
   {
     number: "05",
     imageUrl: "./images/project3.png",
-    videoUrl: "./images/project3.png",
+    videoUrl: "./images/mesto.mp4",
     title: "Places",
     description:
       "HTML, CSS, JS, React, Express Places is a social network where users can share photos of their favorite places. This project demonstrates various front-end techniques, including flexbox layout, CSS grid, working with APIs, and event handling. I connected the database, designed API schemas, and crafted resource models. Implemented robust logging,authentication, and authorization on the server. Scamlessly integrated React components and transformed the markup into React format.",
