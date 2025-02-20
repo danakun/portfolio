@@ -74,6 +74,7 @@
 .intro__about {
   grid-column: 2;
   max-width: 78%;
+  z-index: 5;
 }
 
 .intro__text {
