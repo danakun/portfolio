@@ -2,12 +2,22 @@ const additionalProjects = [
   {
     number: "05",
     imageUrl: "./images/project3.png",
-    videoUrl: "./videos/places-demo.mp4",
+    videoUrl: "./images/project3.png",
     title: "Places",
     description:
       "HTML, CSS, JS, React, Express Places is a social network where users can share photos of their favorite places. This project demonstrates various front-end techniques, including flexbox layout, CSS grid, working with APIs, and event handling. I connected the database, designed API schemas, and crafted resource models. Implemented robust logging,authentication, and authorization on the server. Scamlessly integrated React components and transformed the markup into React format.",
     githubLink: "https://github.com/danakun/react-mesto-api-full-gha",
-    demoLink: "https://dana-kun-mesto-auth.netlify.app",
+    demoLink: "https://danakun-mesto-react.netlify.app/",
+  },
+  {
+    number: "06",
+    imageUrl: "./images/project4.png",
+    videoUrl: "./images/jiffy-demo.mp4",
+    title: "Jiffy",
+    description:
+      "HTML, CSS, JavaScript, API. Jiffy is a simple GIF searcher that uses the Giphy API. This project demonstrates various front-end techniques, including CSS grid layout, working with APIs, and event handling. You can type in a search term and press enter to see the results.",
+    githubLink: "https://github.com/danakun/jiffy-api",
+    demoLink: "https://danakun.github.io/jiffy-api/",
   },
 ];
 
@@ -16,7 +26,7 @@ function createProjectHTML(project) {
   return `
     <article class="project">
       <span class="project__number big-header">${project.number}</span>
-      <a class="project-grid-link" href="${project.githubLink}" target="blank">
+      <a class="project-grid-link" href="${project.demoLink}" target="blank">
         <div class="media-container">
           <img
             class="project__image"
@@ -64,8 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
         projectList.insertBefore(newItem, moreItem);
       });
 
-      // Change text to "LESS..."
-      toggleText.textContent = "LESS...";
+      // Change text to "LESS" (without dots - animation will add them)
+      toggleText.textContent = "LESS";
       isExpanded = true;
     } else {
       // Remove added projects
@@ -74,8 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
       );
       addedItems.forEach((item) => projectList.removeChild(item));
 
-      // Change text back to "MORE..."
-      toggleText.textContent = "MORE...";
+      // Change text back to "MORE" (without dots - animation will add them)
+      toggleText.textContent = "MORE";
       isExpanded = false;
     }
   }
