@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const moreLink = document.querySelector(".project__toggle-link");
-  const moreText = document.querySelector(".project__number");
+  const moreText = document.querySelector(".project__more");
   const originalText = moreText.textContent;
 
   moreLink.addEventListener("mouseenter", function () {
