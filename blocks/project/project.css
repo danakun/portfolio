@@ -264,6 +264,6 @@
     display: none;
   }
   .project__more::after {
-    left: 65%;
+    left: auto;
   }
 }
