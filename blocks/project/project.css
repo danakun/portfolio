@@ -10,7 +10,7 @@
   row-gap: 10px;
   padding-top: 20px;
   border-top: 1px solid var(--transparent-black);
-  margin-bottom: 280px;
+  margin-bottom: 260px;
 
   z-index: 100;
   position: relative;
@@ -83,6 +83,10 @@
   display: inline-block;
   align-self: start;
 }
+
+.project__more.big-header {
+  width: 50%;
+}
 /* styling for expanded projects */
 
 .project__toggle-link {
@@ -148,12 +152,19 @@
 
 /* dots  */
 .project__toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
   border-top: 1px solid var(--transparent-black);
   width: 100%;
   margin-top: 40px;
   position: relative;
   z-index: 7;
+}
+
+.project__toggle svg {
+  transition: transform 0.3s ease;
 }
 
 .project__toggle-link {

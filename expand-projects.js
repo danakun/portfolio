@@ -21,43 +21,10 @@ const additionalProjects = [
   },
 ];
 
-// Function to create a project HTML structure with video hover effect
-function createProjectHTML(project) {
-  return `
-    <article class="project">
-      <span class="project__number big-header">${project.number}</span>
-      <a class="project-grid-link" href="${project.demoLink}" target="blank">
-        <div class="media-container">
-          <img
-            class="project__image"
-            src="${project.imageUrl}"
-            alt="Photo of project ${project.number}."
-          />
-          <video
-            class="project__video"
-            src="${project.videoUrl}"
-            muted
-            loop
-            playsinline
-            autoplay
-          ></video>
-        </div>
-      </a>
-      <div class="project__text">
-        <h3 class="project__title regular-header">${project.title}</h3>
-        <p class="project__description text">
-          ${project.description}
-        </p>
-        <a href="${project.githubLink}" class="project__link" target="blank">Github</a>
-      </div>
-    </article>
-  `;
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   const toggleLink = document.querySelector(".project__toggle-link");
   const toggleText = toggleLink.querySelector(".project__more");
-  const projectList = document.querySelector(".project-grid__list");
+  const toggleArrow = toggleLink.nextElementSibling; // The SVG arrow element
   const toggleContainer = document.querySelector(".project__toggle");
 
   let isExpanded = false;
