@@ -84,9 +84,6 @@
   align-self: start;
 }
 
-.project__more.big-header {
-  width: 50%;
-}
 /* styling for expanded projects */
 
 .project__toggle-link {
@@ -265,5 +262,8 @@
   }
   .project__number::after {
     display: none;
+  }
+  .project__more::after {
+    left: 65%;
   }
 }
